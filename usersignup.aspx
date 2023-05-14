@@ -5,13 +5,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="container">
-
         <div class="row">
-
             <div class="col-md-8 mx-auto">
-
                 <div class="card">
-
                     <div class="card-body">
 
                         <div class="row">
@@ -118,7 +114,7 @@
                             <div class="col-md-4">
                                 <label>City</label>
                                 <div class="form-group">
-                                    <asp:TextBox class="form-control" placeholder="City" ID="TextBox8" AutoCompleteType="Disabled" runat="server" TextMode="SingleLine"></asp:TextBox>
+                                    <asp:TextBox class="form-control" placeholder="City" ID="TextBox7" AutoCompleteType="Disabled" runat="server" TextMode="SingleLine"></asp:TextBox>
                                 </div>
                             </div>
 
@@ -126,7 +122,7 @@
                             <div class="col-md-4">
                                 <label>Pincode</label>
                                 <div class="form-group">
-                                    <asp:TextBox class="form-control" placeholder="Pincode" ID="TextBox9" AutoCompleteType="Disabled" runat="server" TextMode="Phone" MaxLength="6"></asp:TextBox>
+                                    <asp:TextBox class="form-control" placeholder="Pincode" ID="TextBox8" AutoCompleteType="Disabled" runat="server" TextMode="Phone" MaxLength="6"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -135,19 +131,14 @@
                         <div class="row">
                             <div class="col">
                                 <div class="form-group">
-                                    <asp:Button ID="Button1" class="btn btn-success btn-block btn-lg" runat="server" Text="Sign Up" />
+                                    <asp:Button ID="Button1" class="btn btn-success btn-block btn-lg" OnClick="Button1_Click" runat="server" Text="Sign Up" />
                                 </div>
-
                             </div>
-
                         </div>
 
                     </div>
-
                 </div>
-
                 <a href="homepage.aspx">Back to Home</a>
-
             </div>
         </div>
     </div>

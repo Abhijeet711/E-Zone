@@ -16,12 +16,12 @@ namespace E_Commerce_Project
 
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("userlogin.aspx");
         }
 
         protected void LinkButton2_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("usersignup.aspx");
         }
 
         protected void LinkButton3_Click(object sender, EventArgs e)
@@ -31,7 +31,7 @@ namespace E_Commerce_Project
 
         protected void LinkButton4_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("adminlogin.aspx");
         }
     }
 }

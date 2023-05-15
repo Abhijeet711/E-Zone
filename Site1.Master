@@ -80,8 +80,20 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                         <p>
-                            <asp:LinkButton class="nav-link" href="adminlogin.aspx" ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">Admin Login</asp:LinkButton>
-                            &copy All Rights Reserved. 
+                            <asp:LinkButton class="footerlinks" href="adminlogin.aspx" ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">Admin Login</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" href="adminmembermanagement.aspx" ID="LinkButton6" runat="server" OnClick="LinkButton4_Click">User Management</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" href="adminproductmanagement.aspx" ID="LinkButton7" runat="server" OnClick="LinkButton4_Click">Products Management</asp:LinkButton> 
+                         </p>
+                    </div>
+                </div>
+            </div>
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                            &copy All Rights Reserved.
                         </p>
                     </div>
                 </div>

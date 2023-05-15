@@ -11,6 +11,7 @@
   <li> Purchase/Shop, Invoice </li>
   <li> list of products Validation </li>
   <li> web controls </li> </ol>
+ <br>
 <li> Made using: </li> </ul> <ol>
  <li>Visual Studio 2022 - ASP.NET and C#</li>
- <li>SQL Server Database</li>
+ <li>SQL Server Database - SSMS 2019 </li>

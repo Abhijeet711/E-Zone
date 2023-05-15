@@ -38,32 +38,27 @@
 
                                 <label>Name</label>
                                 <div class="form-group">
-                                    <asp:TextBox class="form-control" placeholder="Name" ID="TextBox3" AutoCompleteType="Disabled" runat="server"></asp:TextBox>
+                                    <asp:TextBox class="form-control" placeholder="Name" ID="TextBox1" AutoCompleteType="Disabled" runat="server"></asp:TextBox>
                                 </div>
 
                                 <label>Contact Number</label>
                                 <div class="form-group">
-                                    <asp:TextBox class="form-control" placeholder="Contact Number" ID="TextBox4" runat="server" TextMode="Phone" MaxLength="10" AutoCompleteType="Disabled"></asp:TextBox>
+                                    <asp:TextBox class="form-control" placeholder="Contact Number" ID="TextBox2" runat="server" TextMode="Phone" MaxLength="10" AutoCompleteType="Disabled"></asp:TextBox>
                                 </div>
 
                                 <label>Email ID</label>
                                 <div class="form-group">
-                                    <asp:TextBox class="form-control" placeholder="Email ID" ID="TextBox1" AutoCompleteType="Disabled" runat="server"></asp:TextBox>
+                                    <asp:TextBox class="form-control" placeholder="Email ID" ID="TextBox3" AutoCompleteType="Disabled" runat="server"></asp:TextBox>
                                 </div>
 
                                 <label>Password</label>
                                 <div class="form-group">
-                                    <asp:TextBox class="form-control" placeholder="Password" ID="TextBox2" AutoCompleteType="Disabled" runat="server" TextMode="Password"></asp:TextBox>
-                                </div>
-
-                                <label>Confirm Password</label>
-                                <div class="form-group">
-                                    <asp:TextBox class="form-control" placeholder="Password" ID="TextBox5" AutoCompleteType="Disabled" runat="server" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox class="form-control" placeholder="Password" ID="TextBox4" AutoCompleteType="Disabled" runat="server" TextMode="Password"></asp:TextBox>
                                 </div>
 
                                 <label>Address</label>
                                 <div class="form-group">
-                                    <asp:TextBox class="form-control" placeholder="Address" ID="TextBox6" AutoCompleteType="Disabled" runat="server" TextMode="MultiLine"></asp:TextBox>
+                                    <asp:TextBox class="form-control" placeholder="Address" ID="TextBox5" AutoCompleteType="Disabled" runat="server" TextMode="MultiLine"></asp:TextBox>
                                 </div>
 
                             </div>
@@ -114,7 +109,7 @@
                             <div class="col-md-4">
                                 <label>City</label>
                                 <div class="form-group">
-                                    <asp:TextBox class="form-control" placeholder="City" ID="TextBox7" AutoCompleteType="Disabled" runat="server" TextMode="SingleLine"></asp:TextBox>
+                                    <asp:TextBox class="form-control" placeholder="City" ID="TextBox6" AutoCompleteType="Disabled" runat="server" TextMode="SingleLine"></asp:TextBox>
                                 </div>
                             </div>
 
@@ -122,7 +117,7 @@
                             <div class="col-md-4">
                                 <label>Pincode</label>
                                 <div class="form-group">
-                                    <asp:TextBox class="form-control" placeholder="Pincode" ID="TextBox8" AutoCompleteType="Disabled" runat="server" TextMode="Phone" MaxLength="6"></asp:TextBox>
+                                    <asp:TextBox class="form-control" placeholder="Pincode" ID="TextBox7" AutoCompleteType="Disabled" runat="server" TextMode="Phone" MaxLength="6"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -131,7 +126,8 @@
                         <div class="row">
                             <div class="col">
                                 <div class="form-group">
-                                    <asp:Button ID="Button1" class="btn btn-success btn-block btn-lg" OnClick="Button1_Click" runat="server" Text="Sign Up" />
+                                    <%--<asp:Button ID="Button1" class="btn btn-success btn-block btn-lg" runat="server" Text="Sign Up" OnClick="Button1_Click" />--%>
+                                    <asp:Button ID="Button2" class="btn btn-success btn-block btn-lg" runat="server" Text="Sign Up" OnClick="Button2_Click" />
                                 </div>
                             </div>
                         </div>

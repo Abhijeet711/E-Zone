@@ -38,9 +38,9 @@
                         <div class="row">
                             <div class="col">
                                 
-                                <label>Email ID</label>
+                                <label>Username</label>
                                 <div class="form-group">
-                                    <asp:TextBox AutoCompleteType="Disabled" class="form-control" placeholder="Admin Email ID" ID="TextBox1" runat="server"></asp:TextBox>
+                                    <asp:TextBox AutoCompleteType="Disabled" class="form-control" placeholder="Username" ID="TextBox1" runat="server"></asp:TextBox>
                                 </div>
 
                                 <label>Password</label>
@@ -49,7 +49,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <asp:Button ID="Button1" class="btn btn-success btn-block btn-lg" runat="server" Text="Login" />
+                                    <asp:Button ID="Button1" class="btn btn-success btn-block btn-lg" runat="server" Text="Login" OnClick="Button1_Click" />
                                 </div>
 
                             </div>

@@ -12,7 +12,7 @@
     </section>
 
     <section >
-        <h1 class="text-center">All In One Gaming Store</h1>
+        <h1 class="text-center">All In One Gaming Accessories Store</h1>
     </section>
 
     <section>
@@ -29,7 +29,7 @@
                 <div class="col-md-4">
                     <center>
                         <h4>Product Catalog</h4>
-                        <p class="text-justify">A comprehensive product catalog that includes a variety of games and gaming-related products such as gaming consoles, controllers, headsets, and accessories.</p>
+                        <p class="text-justify">A comprehensive product catalog that includes a variety of gaming accessories such as gaming consoles, controllers, headsets, and more.</p>
                     </center>
                 </div>
                 <div class="col-md-4">
@@ -62,7 +62,7 @@
                 <div class="col-md-4">
                     <center>
                         <h4>Sign Up and Browse</h4>
-                        <p class="text-justify">Users can browse the website's categories or use the search function to find the games or products they're interested in. They can filter their search results by price, platform, genre, or other attributes to narrow down their choices.</p>
+                        <p class="text-justify">Users can browse the website's categories or use the search function to find the products they're interested in. They can filter their search results by price, platform, or other attributes to narrow down their choices.</p>
                     </center>
                 </div>
                 <div class="col-md-4">

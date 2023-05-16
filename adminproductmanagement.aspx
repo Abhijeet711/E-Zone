@@ -3,9 +3,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
     <script type="text/javascript">
-            $(document).ready(function () {
-                $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
-            });
+
+        $(document).ready(function () {
+            $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
+        });
 
         function readURL(input) {
             if (input.files && input.files[0]) {
@@ -17,6 +18,7 @@
                 reader.readAsDataURL(input.files[0]);
             }
         }
+
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -169,7 +171,7 @@
 
                                                             <div class="row">
                                                                 <div class="col-12">
-                                                                    Price: 
+                                                                    Price: <b>₹</b> 
                                                                     <asp:Label ID="Label3" Font-Bold="true" runat="server" Text='<%# Eval("price") %>'></asp:Label>
                                                                 </div>
                                                             </div>

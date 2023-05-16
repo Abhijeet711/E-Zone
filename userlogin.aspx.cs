@@ -48,7 +48,8 @@ namespace E_Commerce_Project
                     Response.Write("<script>alert('Invalid Credentials.');</script>");
                 }
             }
-            catch (Exception ex) { 
+            catch (Exception ex) {
+                Response.Write("<script>alert('"+ex.Message+"');</script>");
             }
         }
     }

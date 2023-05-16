@@ -45,8 +45,8 @@ namespace E_Commerce_Project
                 }
             }
             catch (Exception ex)
-
             {
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
         }
     }

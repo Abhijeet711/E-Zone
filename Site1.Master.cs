@@ -51,7 +51,8 @@ namespace E_Commerce_Project
                     LinkButton7.Visible = true; //products management button
                 }
             }
-            catch(Exception ex) { 
+            catch(Exception ex) {
+                
             }
         }
 

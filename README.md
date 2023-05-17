@@ -11,7 +11,15 @@
   <li> Purchase/Shop, Invoice </li>
   <li> list of products Validation </li>
   <li> web controls </li> </ol>
- <br>
+ </ul>
 <li> Made using: </li> </ul> <ol>
+ <li>HTML5, CSS, JavaScript, Bootstrap, DataTables</li>
  <li>Visual Studio 2022 - ASP.NET and C#</li>
- <li>SQL Server Database - SSMS 2019 </li>
+ <li>SQL Server Database - SSMS 2019 </li> </ol>
+<li> Database Schema: </li> </ul> <ol>
+ <li> Admin Table: </li>
+ <img src='https://github.com/Abhijeet711/E-Zone/blob/main/imgs/admindb.png'></img> 
+ <li> Users Table: </li>
+ <img src='https://github.com/Abhijeet711/E-Zone/blob/main/imgs/eusersdb.png'></img> 
+ <li> Products Table: </li>
+ <img src='https://github.com/Abhijeet711/E-Zone/blob/main/imgs/eproductsdb.png'></img> 

@@ -25,6 +25,8 @@ namespace E_Commerce_Project
                     LinkButton5.Visible = false; //hello user button
                     LinkButton6.Visible = false; //member management button
                     LinkButton7.Visible = false; //products management button
+                    LinkButton8.Visible = false; //products button
+                    LinkButton9.Visible = false; //cart button
                 }
                 else if (Session["role"].Equals("euser"))
                 {
@@ -36,6 +38,8 @@ namespace E_Commerce_Project
 
                     LinkButton3.Visible = true; //logout button
                     LinkButton5.Visible = true; //hello user button
+                    LinkButton8.Visible = true; //products button
+                    LinkButton9.Visible = true; //cart button
                     LinkButton5.Text = "Hello " + Session["name"].ToString();
                 }
                 else if (Session["role"].Equals("admin"))
@@ -43,6 +47,8 @@ namespace E_Commerce_Project
                     LinkButton1.Visible = false; //user login button
                     LinkButton2.Visible = false; //sign up user button
                     LinkButton4.Visible = false; //admin login button
+                    LinkButton8.Visible = false; //products button
+                    LinkButton9.Visible = false; //cart button
 
                     LinkButton3.Visible = true; //logout button
                     LinkButton5.Visible = true; //hello user button
@@ -78,6 +84,7 @@ namespace E_Commerce_Project
             LinkButton7.Visible = false; //products management button
             LinkButton3.Visible = false; //logout button
             LinkButton5.Visible = false; //hello user button
+            LinkButton8.Visible = false; //products button
             Response.Redirect("homepage.aspx");
         }
 
@@ -85,6 +92,12 @@ namespace E_Commerce_Project
         {
             LinkButton4.Visible = false; //admin login button
             Response.Redirect("adminlogin.aspx");
+        }
+
+        protected void LinkButton8_Click(object sender, EventArgs e)
+        {
+            LinkButton8.Visible = false; //products button
+            Response.Redirect("products.aspx");
         }
     }
 }

@@ -65,6 +65,18 @@
                                                         <asp:Label ID="Label5" runat="server" Text='<%# Eval("pdesc") %>'></asp:Label>
                                                     </div>
                                                 </div>
+                                                <br />
+                                                <div class="row">
+                                                    &nbsp;&nbsp;&nbsp;Quantity:
+                                                    <div class="col-md-6">
+                                                        <asp:TextBox ID="TextBox1" TextMode="Number" runat="server"></asp:TextBox>
+                                                    </div>
+                                                    <br /><br />
+                                                    <div class="col-md-6">
+                                                            <asp:HiddenField ID="prod_id" runat="server" Value='<%# Eval("pid") %>' />
+                                                            <asp:LinkButton ID="LinkButton1" runat="server" style="text-align: right;text-decoration: none;" CssClass="button" OnClick="LinkButton1_Click">Add to Cart</asp:LinkButton>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                             <div class="col-lg-3">
@@ -74,7 +86,6 @@
                                     </div>
                                 </ItemTemplate>
                             </asp:TemplateField>
-
                         </Columns>
                     </asp:GridView>
                 </div>

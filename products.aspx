@@ -9,14 +9,19 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <style>
+        body{
+            font-size: larger; 
+        }
+    </style>
     <div class="main_card">
         <div class="card-body">
             <div class="row">
                 <div class="col">
                     <center>
-                        <h4>
+                        <h1>
                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DB1ConnectionString %>" SelectCommand="SELECT * FROM [eproducts]"></asp:SqlDataSource>
-                            Products List</h4>
+                            Products List</h1>
                     </center>
                 </div>
             </div>
@@ -35,6 +40,7 @@
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <asp:Label ID="Label1" runat="server" Text='<%# Eval("pname") %>' Font-Bold="true" Font-Size="X-Large"></asp:Label>
+                                                                  <asp:Image style="width:15%; height:15%; float:right" class="img-fluid" ID="Image2" runat="server" ImageUrl='<%# Eval("imgurl") %>' />
                                                     </div>
                                                 </div>
 
@@ -67,20 +73,15 @@
                                                 </div>
                                                 <br />
                                                 <div class="row">
-                                                    &nbsp;&nbsp;&nbsp;Quantity:
+                                                    
                                                     <div class="col-md-6">
-                                                        <asp:TextBox ID="TextBox1" TextMode="Number" runat="server"></asp:TextBox>
-                                                    </div>
-                                                    <br /><br />
-                                                    <div class="col-md-6">
-                                                            <asp:HiddenField ID="prod_id" runat="server" Value='<%# Eval("pid") %>' />
-                                                            <asp:LinkButton ID="LinkButton1" runat="server" style="text-align: right;text-decoration: none;" CssClass="button" OnClick="LinkButton1_Click">Add to Cart</asp:LinkButton>
+                                                        Quantity: <asp:TextBox ID="TextBox1" TextMode="Number" runat="server" Text="1"></asp:TextBox>
+                                                        <asp:HiddenField ID="prod_id" runat="server" Value='<%# Eval("pid") %>' /> 
+                                                        <br /><br />
+                                                        <asp:LinkButton ID="LinkButton1" runat="server" style="background-color:#00FF7F;border: 1px dashed black;text-align: right;text-decoration: none;" CssClass="button" OnClick="LinkButton1_Click">Add to Cart</asp:LinkButton>
                                                     </div>
                                                 </div>
 
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <asp:Image class="img-fluid" ID="Image1" runat="server" ImageUrl='<%# Eval("imgurl") %>' />
                                             </div>
                                         </div>
                                     </div>

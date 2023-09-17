@@ -3,6 +3,90 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            font-size: larger;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            width: 800px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 150px;
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .card hr {
+            border-top: 1px solid #ccc;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-control {
+            width: 50%;
+            height: 40px;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .btn-block {
+            display: block;
+            width: 100%;
+            height: 40px;
+            padding: 8px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            background-color: #28a745;
+            cursor: pointer;
+        }
+
+        .btn-block:hover {
+            background-color: #218838;
+        }
+
+        .back-to-home {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .back-to-home:hover {
+            text-decoration: underline;
+        }
+</style>
 
     <div class="container">
         <div class="row">
@@ -35,32 +119,13 @@
                         <%-- Basic Details --%>
                         <div class="row">
                             <div class="col">
-
-                                <label>Name</label>
                                 <div class="form-group">
                                     <asp:TextBox class="form-control" placeholder="Name" ID="TextBox1" AutoCompleteType="Disabled" runat="server"></asp:TextBox>
-                                </div>
-
-                                <label>Contact Number</label>
-                                <div class="form-group">
                                     <asp:TextBox class="form-control" placeholder="Contact Number" ID="TextBox2" runat="server" TextMode="Phone" MaxLength="10" AutoCompleteType="Disabled"></asp:TextBox>
-                                </div>
-
-                                <label>Email ID</label>
-                                <div class="form-group">
                                     <asp:TextBox class="form-control" placeholder="Email ID" ID="TextBox3" AutoCompleteType="Disabled" runat="server"></asp:TextBox>
-                                </div>
-
-                                <label>Password</label>
-                                <div class="form-group">
                                     <asp:TextBox class="form-control" placeholder="Password" ID="TextBox4" AutoCompleteType="Disabled" runat="server" TextMode="Password"></asp:TextBox>
-                                </div>
-
-                                <label>Address</label>
-                                <div class="form-group">
                                     <asp:TextBox class="form-control" placeholder="Address" ID="TextBox5" AutoCompleteType="Disabled" runat="server" TextMode="MultiLine"></asp:TextBox>
                                 </div>
-
                             </div>
                         </div>
 
@@ -69,8 +134,7 @@
                             
                             <%-- State --%>
                             <div class="col-md-4">
-                                <label>State</label>
-                                <div class="form-group">
+                                <asp:Label>State:</asp:Label>
                                     <asp:DropDownList class="form-control" ID="DropDownList1" runat="server">
                                         <asp:ListItem Text="--select--" Value="select"></asp:ListItem>
                                         <asp:ListItem Text="Andhra Pradesh" Value="Andhra Pradesh"></asp:ListItem>
@@ -102,23 +166,13 @@
                                         <asp:ListItem Text="Uttarakhand" Value="Uttarakhand"></asp:ListItem>
                                         <asp:ListItem Text="West Bengal" Value="West Bengal"></asp:ListItem>
                                     </asp:DropDownList> 
-                                </div>
-                            </div>
-
-                            <%-- City --%>
-                            <div class="col-md-4">
-                                <label>City</label>
-                                <div class="form-group">
+                            
+                                
                                     <asp:TextBox class="form-control" placeholder="City" ID="TextBox6" AutoCompleteType="Disabled" runat="server" TextMode="SingleLine"></asp:TextBox>
-                                </div>
-                            </div>
 
-                            <%-- Pincode --%>
-                            <div class="col-md-4">
-                                <label>Pincode</label>
-                                <div class="form-group">
+                                
                                     <asp:TextBox class="form-control" placeholder="Pincode" ID="TextBox7" AutoCompleteType="Disabled" runat="server" TextMode="Phone" MaxLength="6"></asp:TextBox>
-                                </div>
+                                
                             </div>
                         </div>
 

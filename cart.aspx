@@ -19,7 +19,7 @@
                                 <ItemTemplate>
                                     <div class="row">
                                         <div class="col-3">
-                                            <asp:Image ID="Image1" runat="server" CssClass="product-grid img-fluid" ImageUrl='<%# Eval("ImageURL") %>' />
+                                            <asp:Image style="width:35%; height:35%;" ID="Image1" runat="server" CssClass="product-grid img-fluid" ImageUrl='<%# Eval("ImageURL") %>' />
                                         </div>
                                     </div>
                                 </ItemTemplate>

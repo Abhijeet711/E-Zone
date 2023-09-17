@@ -22,7 +22,6 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
     <div class="container-fluid">
         <div class="row">
 
@@ -159,6 +158,7 @@
                                                             <div class="row">
                                                                 <div class="col-12">
                                                                     <asp:Label ID="Label1" runat="server" Text='<%# Eval("pname") %>' Font-Bold="true" Font-Size="Large"></asp:Label>
+                                                                                           <asp:Image style="width:15%; height:15%; float:right" class="img-fluid" ID="Image1" runat="server" ImageUrl='<%# Eval("imgurl") %>' />
                                                                 </div>
                                                             </div>
 
@@ -190,9 +190,6 @@
                                                                 </div>
                                                             </div>
                                                             
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <asp:Image class="img-fluid" ID="Image1" runat="server" ImageUrl='<%# Eval("imgurl") %>' />
                                                         </div>
                                                     </div>
                                                 </div>

@@ -4,10 +4,70 @@
 
 <html>
 <head runat="server">
+    <style>/* CSS for Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #e9ecef;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%2822%2c 22%2c 22%2c 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+</style>
     <title></title>
     
     <%--bootstrap css--%>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        
     <%--datatables css--%>
     <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
     <%--custom css--%>
@@ -82,8 +142,10 @@
 
         <!--Footer-->
         <footer>
+            <center>
             <div id="footer1" class="container-fluid">
                 <div class="row">
+                    
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                         <p>
                             <asp:LinkButton class="footerlinks" href="adminlogin.aspx" ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">Admin Login</asp:LinkButton>
@@ -93,6 +155,7 @@
                             <asp:LinkButton class="footerlinks" href="adminproductmanagement.aspx" ID="LinkButton7" runat="server" OnClick="LinkButton4_Click">Products Management</asp:LinkButton> 
                          </p>
                     </div>
+                    
                 </div>
             </div>
             <div id="footer2" class="container-fluid">
@@ -104,6 +167,7 @@
                     </div>
                 </div>
             </div>
+            </center>
         </footer>
 
     </form>

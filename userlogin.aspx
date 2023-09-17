@@ -3,6 +3,90 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .card {
+        width: 400px;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card img {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+    
+    .card h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .card hr {
+        border-top: 1px solid #ccc;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .form-group label {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    .form-control {
+        width: 100%;
+        height: 40px;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    .btn-block {
+        display: block;
+        width: 100%;
+        height: 40px;
+        padding: 8px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        background-color: #28a745;
+        cursor: pointer;
+    }
+    
+    .btn-block:hover {
+        background-color: #218838;
+    }
+    
+    .back-to-home {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+        color: #333;
+        text-decoration: none;
+    }
+    
+    .back-to-home:hover {
+        text-decoration: underline;
+    }
+</style>
 
     <div class="container">
 

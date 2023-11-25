@@ -67,7 +67,7 @@
     <title></title>
     
     <%--bootstrap css--%>
-        
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />    
     <%--datatables css--%>
     <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
     <%--custom css--%>
